@@ -1,0 +1,45 @@
+Defined parameters (per moses.ini or switch):
+	config: /home/htoohtetpaing/internpj/translator/myanmarfiltered/moses.ini 
+	distortion-limit: 6 
+	feature: UnknownWordPenalty WordPenalty PhrasePenalty PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/htoohtetpaing/internpj/translator/myanmarfiltered/phrase-table.0-0.1.1.gz input-factor=0 output-factor=0 LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/htoohtetpaing/internpj/translator/myanmarfiltered/reordering-table.wbe-msd-bidirectional-fe.0-0.1 Distortion KENLM name=LM0 factor=0 path=/home/htoohtetpaing/smt/MyEn/lm/npt.blm.en order=5 
+	input-factors: 0 
+	mapping: 0 T 0 
+	v: 0 
+	weight: LexicalReordering0= 0.0148029 0.0223112 0.126154 0.146623 0.0840202 0.166534 Distortion0= -0.0158798 LM0= 0.123986 WordPenalty0= -0.0853759 PhrasePenalty0= 0.0118414 TranslationModel0= 0.0792696 0.0348296 0.0770219 0.0113499 UnknownWordPenalty0= 1 
+line=UnknownWordPenalty
+FeatureFunction: UnknownWordPenalty0 start: 0 end: 0
+line=WordPenalty
+FeatureFunction: WordPenalty0 start: 1 end: 1
+line=PhrasePenalty
+FeatureFunction: PhrasePenalty0 start: 2 end: 2
+line=PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/home/htoohtetpaing/internpj/translator/myanmarfiltered/phrase-table.0-0.1.1.gz input-factor=0 output-factor=0
+FeatureFunction: TranslationModel0 start: 3 end: 6
+line=LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/home/htoohtetpaing/internpj/translator/myanmarfiltered/reordering-table.wbe-msd-bidirectional-fe.0-0.1
+Initializing Lexical Reordering Feature..
+FeatureFunction: LexicalReordering0 start: 7 end: 12
+line=Distortion
+FeatureFunction: Distortion0 start: 13 end: 13
+line=KENLM name=LM0 factor=0 path=/home/htoohtetpaing/smt/MyEn/lm/npt.blm.en order=5
+FeatureFunction: LM0 start: 14 end: 14
+Loading UnknownWordPenalty0
+Loading WordPenalty0
+Loading PhrasePenalty0
+Loading LexicalReordering0
+Loading table into memory...done.
+Loading Distortion0
+Loading LM0
+Loading TranslationModel0
+Start loading text phrase table. Moses format : [0.004] seconds
+Reading /home/htoohtetpaing/internpj/translator/myanmarfiltered/phrase-table.0-0.1.1.gz
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Created input-output object : [0.005] seconds
+Translating: ခင် ပွန်း ကြီး ဆယ် ပါး ။ 
+Line 0: Initialize search took 0.000 seconds total
+Line 0: Collecting options took 0.000 seconds at moses/Manager.cpp Line 141
+Line 0: Search took 0.019 seconds
+BEST TRANSLATION: thin ten large husband . [111111]  [total=-5.176] core=(0.000,-5.000,4.000,-6.070,-6.835,-0.826,-9.475,0.000,-3.219,-0.922,0.000,-2.457,-0.511,-14.000,-36.311)  
+Line 0: Decision rule took 0.000 seconds total
+Line 0: Additional reporting took 0.000 seconds total
+Line 0: Translation took 0.019 seconds total
+Name:moses	VmPeak:42332 kB	VmRSS:15016 kB	RSSMax:23296 kB	user:0.024	sys:0.006	CPU:0.030	real:0.026
